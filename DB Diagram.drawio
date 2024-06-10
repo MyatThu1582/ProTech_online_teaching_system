@@ -1,0 +1,83 @@
+<mxfile host="app.diagrams.net" modified="2024-05-31T04:18:37.393Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="hMAVfDuGK6oA8_glkscY" version="24.4.10" type="device">
+  <diagram name="Page-1" id="hiuSERij68VwZIGt3HrL">
+    <mxGraphModel dx="1563" dy="789" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="w_pe8mge4aM9Xq12h-Tg-1" value="Table: users&lt;br&gt;Id (Primary Key) (Forigen Key:role_user)&lt;br&gt;name (Text) (255)&lt;br&gt;email (Text) (255)&lt;br&gt;&lt;div&gt;gender (Text) (25)&lt;/div&gt;&lt;div&gt;TimeStamp&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="190" y="120" width="230" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="9HccbvvZ-AA2k1e7KVH--3" value="Table:role_user&lt;div&gt;Id(Primary Key)&lt;/div&gt;&lt;div&gt;role_id(int)(Forigen Key:role)&lt;/div&gt;&lt;div&gt;user_id(int)(Foregin Key:user)&lt;/div&gt;&lt;div&gt;TimeStamp&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="500" y="120" width="210" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="9HccbvvZ-AA2k1e7KVH--5" value="Table:roles&lt;div&gt;id(Primary Key)(Forigen Key:role_user)&lt;/div&gt;&lt;div&gt;role_name(Text)(255)&lt;/div&gt;&lt;div&gt;TimeStamp&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="500" y="350" width="210" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="9HccbvvZ-AA2k1e7KVH--9" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="w_pe8mge4aM9Xq12h-Tg-1" target="9HccbvvZ-AA2k1e7KVH--3" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="420" y="260" as="sourcePoint" />
+            <mxPoint x="520" y="160" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9HccbvvZ-AA2k1e7KVH--11" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="9HccbvvZ-AA2k1e7KVH--5" target="9HccbvvZ-AA2k1e7KVH--3" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="550" y="350" as="sourcePoint" />
+            <mxPoint x="650" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9HccbvvZ-AA2k1e7KVH--12" value="Table:Course&lt;div&gt;&lt;div&gt;id(Primary Key)&lt;/div&gt;&lt;div&gt;description (Text) (100)&lt;br&gt;&lt;/div&gt;&lt;div&gt;content(Text) (255)&lt;/div&gt;&lt;div&gt;image(varchar)(255)&lt;/div&gt;&lt;div&gt;price(int) (11)&lt;/div&gt;&lt;/div&gt;&lt;div&gt;created_at (TimeStamp)&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="190" y="340" width="220" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="9HccbvvZ-AA2k1e7KVH--14" value="Table:vi&lt;span style=&quot;background-color: initial;&quot;&gt;deos&lt;/span&gt;&lt;div&gt;&lt;div&gt;id(Primary Key)&lt;/div&gt;&lt;/div&gt;&lt;div&gt;title(Text)(255)&lt;/div&gt;&lt;div&gt;chapter_id(Forigen Key:chapter)&lt;/div&gt;&lt;div&gt;video_url(Text)(1000)&lt;/div&gt;&lt;div&gt;description(Text)(255)&lt;/div&gt;&lt;div&gt;created_at(&lt;span style=&quot;background-color: initial;&quot;&gt;TimeStamp)&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="490" y="817" width="220" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="9HccbvvZ-AA2k1e7KVH--16" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="300" y="580" as="sourcePoint" />
+            <mxPoint x="300" y="475" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="299.5" y="495" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vwmhd769s6nkDj53E7GC-1" value="Table : Chapters&lt;div&gt;id(primary_key)&lt;/div&gt;&lt;div&gt;title(text)(100)&lt;/div&gt;&lt;div&gt;course_id(Foreign_key:Course)&lt;/div&gt;&lt;div&gt;created_at (TimeStamp)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="819" width="220" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="vwmhd769s6nkDj53E7GC-2" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="490" y="866" as="sourcePoint" />
+            <mxPoint x="410" y="866" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="450" y="866" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vwmhd769s6nkDj53E7GC-3" value="Table : Request&lt;div&gt;id(primary_key)&lt;/div&gt;&lt;div&gt;user_id(foreign_key:users)&lt;/div&gt;&lt;div&gt;course_id(foreign_key:Course)&lt;/div&gt;&lt;div&gt;payment_no(varchar)(100)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="185" y="583" width="230" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="vwmhd769s6nkDj53E7GC-4" value="Table : Permission&lt;div&gt;user_id(foreign_key:users)&lt;/div&gt;&lt;div&gt;course_id(foreign_key:course)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="495" y="600" width="220" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="vwmhd769s6nkDj53E7GC-5" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.049;entryY=1.007;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="410" y="351" as="sourcePoint" />
+            <mxPoint x="510.28999999999996" y="262.04999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vwmhd769s6nkDj53E7GC-6" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="417" y="660" as="sourcePoint" />
+            <mxPoint x="492" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vwmhd769s6nkDj53E7GC-7" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="496" y="730" as="sourcePoint" />
+            <mxPoint x="414.42857142857133" y="801" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
